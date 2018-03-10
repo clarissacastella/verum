@@ -21,8 +21,7 @@
 	},
 	
 	"content_scripts": [ {
-		"js": [ "jquery.min.js", "swal/sweetalert2.min.js", "factchecking.js" ],
-		"css": [ "swal/sweetalert2.min.css" ],
+		"js": [ "jquery.min.js", "factchecking.js" ],
 		"matches": [ "https://*.facebook.com/*" ]
 	} ]
 }
