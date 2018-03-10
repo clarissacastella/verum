@@ -1,0 +1,28 @@
+{
+	"name": "Verum",
+	"description": "Verificador de fake news",
+	"version": "0.6",
+	"permissions": ["contextMenus"],
+	"background": {
+		"scripts": ["factchecking.js"]
+	},
+	"manifest_version": 2,
+	
+	"icons": {
+		"48": "img/verum-icon-48-01.png",
+		"128": "img/verum-icon-128-01.png"
+	},
+	
+	"page_action": {
+		"default_icon": {
+			"19" : "img/verum-icon-19-01.png"
+		},
+		"default_title": "Verum"
+	},
+	
+	"content_scripts": [ {
+		"js": [ "jquery.min.js", "swal/sweetalert2.min.js", "factchecking.js" ],
+		"css": [ "swal/sweetalert2.min.css" ],
+		"matches": [ "https://*.facebook.com/*" ]
+	} ]
+}
