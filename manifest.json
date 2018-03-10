@@ -7,8 +7,7 @@
 		"scripts": ["factchecking.js"]
 	},
 	"manifest_version": 2,
-	
-	"icons": {
+  "icons": {
 		"48": "img/verum-icon-48-01.png",
 		"128": "img/verum-icon-128-01.png"
 	},
@@ -18,10 +17,5 @@
 			"19" : "img/verum-icon-19-01.png"
 		},
 		"default_title": "Verum"
-	},
-	
-	"content_scripts": [ {
-		"js": [ "jquery.min.js", "factchecking.js" ],
-		"matches": [ "https://*.facebook.com/*" ]
-	} ]
+	}
 }
